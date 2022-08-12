@@ -21,6 +21,13 @@ public class ProjectConfig {
         vehicle.setName("Toyota");
         return vehicle;
     }
+    
+    @Bean
+    public Vehicle vehicle2() {
+        Vehicle vehicle = new Vehicle();
+        vehicle.setName("YoyO");
+        return vehicle;
+    }
 
     /*
     Here in the below code, we are trying to wire or establish a relationship between Person and
@@ -32,8 +39,8 @@ public class ProjectConfig {
     @Bean
     public Person person() {
         Person person = new Person();
-        person.setName("Lucy");
-        person.setVehicle(vehicle());
+        person.setName("LucyLawless");
+        person.setVehicle(vehicle2());
         return person;
     }
 

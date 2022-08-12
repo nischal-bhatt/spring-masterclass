@@ -8,7 +8,8 @@ public class HomeController {
 
     @RequestMapping("/home")
     public String displayHomePage() {
-        return "home.html";
+    	System.out.println("now in display home page method");
+        return "testing.html";
     }
 
 }

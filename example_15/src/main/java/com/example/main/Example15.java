@@ -9,7 +9,7 @@ public class Example15 {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
         System.out.println("Before retrieving the Person bean from the Spring Context");
-        Person person = context.getBean(Person.class);
+        Person person = context.getBean(Person.class); //Person bean is lazy
         System.out.println("After retrieving the Person bean from the Spring Context");
     }
 }

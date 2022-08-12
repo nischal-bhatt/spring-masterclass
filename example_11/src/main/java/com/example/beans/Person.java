@@ -1,6 +1,7 @@
 package com.example.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -8,8 +9,9 @@ public class Person {
 
     private String name="Lucy";
 
-    @Autowired
-    public Person(Vehicle vehicle){
+    //@Autowired(required=false) //can be null @Autowired(required=false);
+    //constructor injection no need to use autowired
+    public Person(@Qualifier("vehicle2")Vehicle vehicle){
         System.out.println("Person bean created by Spring");
         this.vehicle = vehicle;
     }

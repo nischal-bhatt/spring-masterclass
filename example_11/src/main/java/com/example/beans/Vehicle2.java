@@ -2,13 +2,13 @@ package com.example.beans;
 
 import org.springframework.stereotype.Component;
 
-@Component
-public class Vehicle {
+@Component(value="vehicle2")
+public class Vehicle2 extends Vehicle{
 
-    public Vehicle(){
+    public Vehicle2(){
         System.out.println("Vehicle bean created by Spring");
     }
-    private String name = "Example11";
+    private String name = "Example11-2";
     //can use postconstruct also
 
     public String getName() {

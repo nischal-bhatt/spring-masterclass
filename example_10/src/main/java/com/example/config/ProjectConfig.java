@@ -2,6 +2,8 @@ package com.example.config;
 
 import com.example.beans.Person;
 import com.example.beans.Vehicle;
+
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -21,6 +23,13 @@ public class ProjectConfig {
         vehicle.setName("Toyota");
         return vehicle;
     }
+    
+    @Bean("vehicle2")
+    public Vehicle vehicle2() {
+        Vehicle vehicle = new Vehicle();
+        vehicle.setName("Example10");
+        return vehicle;
+    }
 
     /*
     Here in the below code, we are trying to wire or establish a relationship between Person
@@ -32,10 +41,10 @@ public class ProjectConfig {
 
     * */
     @Bean
-    public Person person(Vehicle vehicle) {
+    public Person person(Vehicle vehicle2) {
         Person person = new Person();
         person.setName("Lucy");
-        person.setVehicle(vehicle);
+        person.setVehicle(vehicle2);
         return person;
     }
 

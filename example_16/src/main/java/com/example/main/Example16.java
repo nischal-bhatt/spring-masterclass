@@ -9,6 +9,7 @@ public class Example16 {
 
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+        //prototype scope
         VehicleServices vehicleServices1 = context.getBean(VehicleServices.class);
         VehicleServices vehicleServices2 = context.getBean("vehicleServices",VehicleServices.class);
         System.out.println("Hashcode of the object vehicleServices1 : " +vehicleServices1.hashCode());

@@ -21,6 +21,7 @@ public class ContactService {
         boolean isSaved = true;
         //TODO - Need to persist the data into the DB table
         log.info(contact.toString());
+        log.info(contact.getEmail());
         return isSaved;
     }
 

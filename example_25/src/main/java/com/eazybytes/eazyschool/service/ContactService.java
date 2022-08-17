@@ -14,9 +14,9 @@ Logger static property in the class at compilation time.
 * */
 @Slf4j
 @Service
-//@RequestScope
+@RequestScope //new bean for new http request
 //@SessionScope
-@ApplicationScope
+//ApplicationScope
 public class ContactService {
 
     private int counter = 0;

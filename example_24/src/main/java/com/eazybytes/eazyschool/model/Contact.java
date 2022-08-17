@@ -21,7 +21,7 @@ public class Contact {
       @NotBlank: Checks if a given field is not null and trimmed length is greater than zero.
     * */
     @NotBlank(message="Name must not be blank")
-    @Size(min=3, message="Name must be at least 3 characters long")
+    @Size(min=3, message="Name must be at least 3 characters long nish is shere!")
     private String name;
 
     @NotBlank(message="Mobile number must not be blank")

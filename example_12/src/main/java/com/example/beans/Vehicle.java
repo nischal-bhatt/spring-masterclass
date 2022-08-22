@@ -6,18 +6,18 @@ public class Vehicle {
 
     private String name;
 // commented code below will cause circular dependencies
-   // private Person person;
+    private Person person;
     
   //  public Person getPerson()
    // {
    // 	return this.person;
    // }
     
-    //@Autowired
-    //public void setPerson(Person person)
-   // {
-   // 	this.person = person;
-   // }
+    @Autowired
+    public void setPerson(Person person)
+    {
+    	this.person = person;
+    }
     
     public String getName() {
         return name;

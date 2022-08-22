@@ -40,7 +40,8 @@ public class ProjectConfig {
     public Person person() {
         Person person = new Person();
         person.setName("LucyLawless");
-        person.setVehicle(vehicle2());
+        person.setVehicle(vehicle());
+        //since person depends on vehicle, vehicle bean will be created first
         return person;
     }
 

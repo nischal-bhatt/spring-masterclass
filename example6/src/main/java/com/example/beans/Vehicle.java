@@ -21,7 +21,7 @@ public class Vehicle {
 
     @PostConstruct
     public void initialize() {
-        this.name = "POJONISHBNISH";
+        this.name = "POJONISHBNISH-this can be leveraged from creating using the @Bean annotation";
         System.out.println("after bean is constructed, this is executed");
     }
 

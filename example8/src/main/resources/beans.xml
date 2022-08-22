@@ -17,4 +17,9 @@
         <property name="name" value="nish" />
         <property name="shit" value="now" />
     </bean>
+    
+    <bean id="vehicle4" class="com.example.beans.Vehicle" primary="true"> <!--  primary="true"-->
+        <property name="name" value="nish" />
+        <property name="shit" value="primary" />
+    </bean>
 </beans>

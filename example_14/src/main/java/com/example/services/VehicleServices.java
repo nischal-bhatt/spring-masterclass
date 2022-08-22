@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Scope(BeanDefinition.SCOPE_SINGLETON)
+//singleton is a default thingy
+//singleton might be a problem with multiple threads
 public class VehicleServices {
 
     @Autowired

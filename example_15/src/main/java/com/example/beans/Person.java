@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component(value="personBean")
 @Lazy
+//lazy means it will only be created when it is needed
 public class Person {
 
     private String name="Lucy";

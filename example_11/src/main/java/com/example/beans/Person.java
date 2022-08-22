@@ -9,6 +9,7 @@ public class Person {
 
     private String name="Lucy";
 
+    //no need to use autowired
     //@Autowired(required=false) //can be null @Autowired(required=false);
     //constructor injection no need to use autowired
     public Person(@Qualifier("vehicle2")Vehicle vehicle){

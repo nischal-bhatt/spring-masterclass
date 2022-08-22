@@ -10,6 +10,7 @@ public class Person {
     private String name="Lucy";
     private final Vehicle vehicle;
 
+    //qualifier annotation
     @Autowired
     public Person(@Qualifier("vehicle2") Vehicle vehicle){
         System.out.println("Person bean created by Spring");

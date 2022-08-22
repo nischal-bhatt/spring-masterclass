@@ -14,8 +14,9 @@ public class Example2 {
         based on the surrounding context.
         * */
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
-        // Vehicle veh = context.getBean(Vehicle.class);
-        Vehicle veh = context.getBean("vehicle1",Vehicle.class);
+         Vehicle veh = context.getBean(Vehicle.class);
+        // this is no unique bean definiteion example
+      //  Vehicle veh = context.getBean("vehicle1",Vehicle.class);
         Vehicle veh2 = context.getBean("vehicle2",Vehicle.class);
         System.out.println("Vehicle name from Spring Context is: " + veh.getName());
         System.out.println("Vehicle name from Spring Context is: " + veh2.getName());

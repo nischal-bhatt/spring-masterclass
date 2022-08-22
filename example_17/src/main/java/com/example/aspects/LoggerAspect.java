@@ -22,7 +22,8 @@ public class LoggerAspect {
 
     @Around("execution(* com.example.services.*.*(..))")
     public void log(ProceedingJoinPoint joinPoint) throws Throwable {
-        logger.info(joinPoint.getSignature().toString() + " method execution start");
+        System.out.println("we're here too");
+    	logger.info(joinPoint.getSignature().toString() + " method execution start");
         Instant start = Instant.now();
         joinPoint.proceed();
         Instant finish = Instant.now();
@@ -33,7 +34,8 @@ public class LoggerAspect {
 
     @Around("@annotation(com.example.interfaces.LogAspect)")
     public void logWithAnnotation(ProceedingJoinPoint joinPoint) throws Throwable {
-        logger.info(joinPoint.toString() + " method execution start");
+        System.out.println("we're here in annos");
+    	logger.info(joinPoint.toString() + " method execution start");
         Instant start = Instant.now();
         joinPoint.proceed();
         Instant finish = Instant.now();

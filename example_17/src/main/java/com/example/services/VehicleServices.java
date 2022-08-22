@@ -72,6 +72,8 @@ public class VehicleServices {
         logger.info("Time took to execute the method : "+timeElapsed);*/
         return tyres.stop();
     }
+    
+    
 
     public Speakers getSpeakers() {
         return speakers;

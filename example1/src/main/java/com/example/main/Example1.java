@@ -1,8 +1,10 @@
 package com.example.main;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.example.beans.Person;
 import com.example.beans.Vehicle;
 import com.example.config.ProjectConfig;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Example1 {
 
@@ -43,6 +45,11 @@ public class Example1 {
         
         Double b = (Double)context.getBean("getDouble");
         System.out.println(b);
+        
+       // Person nish = (Person)context.getBean("getPerson3");
+        Person nish = (Person)context.getBean("getPerson");
+        System.out.println(nish.getName());
+        System.out.println(nish.getAge());
         
     }
 }

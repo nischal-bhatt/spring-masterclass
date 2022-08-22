@@ -1,8 +1,10 @@
 package com.example.config;
 
-import com.example.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import com.example.beans.Person;
+import com.example.beans.Vehicle;
 
 /*
 Spring @Configuration annotation is part of the spring core framework.
@@ -50,5 +52,15 @@ public class ProjectConfig {
     @Bean
     Double getDouble2() {
     	return 2.83;
+    }
+    
+    @Bean
+    Person getPerson() 
+    {
+    	Person p = new Person();
+    	p.setName("Nish");
+    	p.setAge(35);
+    	
+    	return p;
     }
 }

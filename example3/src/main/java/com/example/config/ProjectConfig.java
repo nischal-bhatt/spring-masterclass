@@ -40,5 +40,13 @@ public class ProjectConfig {
         veh.setName("Ferrari");
         return veh;
     }
+    
+    @Bean(name="nishsbean")
+    Vehicle vehicle4()
+    {
+    	var veh = new Vehicle();
+    	veh.setName("nish's car");
+    	return veh;
+    }
 
 }

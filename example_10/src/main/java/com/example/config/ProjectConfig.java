@@ -41,6 +41,7 @@ public class ProjectConfig {
 
     * */
     @Bean
+    // wiring beans in method calls using method params
     public Person person(Vehicle vehicle2) {
         Person person = new Person();
         person.setName("Lucy");

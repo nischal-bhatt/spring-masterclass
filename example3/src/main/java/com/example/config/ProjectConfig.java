@@ -1,8 +1,10 @@
 package com.example.config;
 
-import com.example.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+
+import com.example.beans.Vehicle;
 
 /*
 Spring @Configuration annotation is part of the spring core framework.
@@ -33,6 +35,7 @@ public class ProjectConfig {
         return veh;
     }
 
+    @Primary
     //in the parantheses, the bean name is there
     @Bean("ferrariVehicle")
     Vehicle vehicle3() {
@@ -41,6 +44,7 @@ public class ProjectConfig {
         return veh;
     }
     
+   // @Primary
     @Bean(name="nishsbean")
     Vehicle vehicle4()
     {

@@ -21,5 +21,8 @@ public class Example3 {
     
         veh3 = context.getBean("nishsbean",Vehicle.class);
         System.out.println(veh3.getName());
+        
+        Vehicle primary = context.getBean(Vehicle.class);
+        System.out.println(primary.getName());
     }
 }

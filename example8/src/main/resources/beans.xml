@@ -12,4 +12,9 @@
         <property name="name" value="KuttaKamina2" />
         <property name="shit" value="popo2" />
     </bean>
+    
+    <bean id="vehicle3" class="com.example.beans.Vehicle">
+        <property name="name" value="nish" />
+        <property name="shit" value="now" />
+    </bean>
 </beans>

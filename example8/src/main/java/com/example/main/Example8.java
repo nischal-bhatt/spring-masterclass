@@ -12,5 +12,7 @@ public class Example8 {
         System.out.println("Vehicle name from Spring Context is: " + vehicle.getName());
         System.out.println("Vehicle name from Spring Context is: " + vehicle.getShit());
 
+        Vehicle vehi = context.getBean("vehicle3",Vehicle.class);
+        System.out.println(vehi.getShit());
     }
 }

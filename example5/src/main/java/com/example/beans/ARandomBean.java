@@ -1,8 +1,10 @@
 package com.example.beans;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+//@Component
+//@Controller
+@Service
 public class ARandomBean {
 
 	private int x;

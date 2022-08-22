@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 public class Example7 {
 
     public static void main(String[] args) {
-
+//creating bean using conditions
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
         Vehicle volkswagen = new Vehicle();

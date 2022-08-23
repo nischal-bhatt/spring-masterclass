@@ -12,4 +12,5 @@ public class Holiday {
     public enum Type {
         FESTIVAL, FEDERAL
     }
+    //lombok - control o to see all methods of a class
 }

@@ -23,6 +23,7 @@ public class ContactService {
     @Autowired
     private ContactRepository contactRepository;
 
+    //using Config properties object to read application.properties values
     @Autowired
     EazySchoolProps eazySchoolProps;
 

@@ -15,6 +15,7 @@ Logger static property in the class at compilation time.
 @Slf4j
 @Service
 @RequestScope //new bean for new http request
+//a new bean for each http request
 //@SessionScope
 //ApplicationScope
 public class ContactService {

@@ -29,7 +29,7 @@ public class Contact {
     private String mobileNum;
 
     @NotBlank(message="Email must not be blank")
-    @Email(message = "Please provide a valid email address" )
+    @Email(message = "Please provide a valid email address !!!!!!!!!!!!!!" )
     private String email;
 
     @NotBlank(message="Subject must not be blank")

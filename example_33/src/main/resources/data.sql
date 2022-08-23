@@ -21,3 +21,6 @@ INSERT INTO `holidays` (`day`,`reason`,`type`,`created_at`, `created_by`)
 
 INSERT INTO `holidays` (`day`,`reason`,`type`,`created_at`, `created_by`)
   VALUES (' Nov 11 ','Veterans Day','FEDERAL',CURDATE(),'DBA');
+  
+  INSERT INTO `holidays` (`day`,`reason`,`type`,`created_at`, `created_by`)
+  VALUES (' Nov 16 ','Prayag bday ','FEDERAL',CURDATE(),'DBA');

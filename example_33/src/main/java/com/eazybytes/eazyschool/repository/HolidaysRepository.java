@@ -34,6 +34,8 @@ public class HolidaysRepository {
         String sql = "SELECT * FROM HOLIDAYS";
         var rowMapper = BeanPropertyRowMapper.newInstance(Holiday.class);
         return jdbcTemplate.query(sql, rowMapper);
+        // no need a new rowMapper implementation, since Holiday class variables are same as 
+        // columns names
     }
 
 }

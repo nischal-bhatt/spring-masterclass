@@ -14,6 +14,7 @@ DB related operations and
 @Repository
 public interface ContactRepository extends CrudRepository<Contact, Integer> {
 
+	//derived query methods
     List<Contact> findByStatus(String status);
 
 }

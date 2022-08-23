@@ -8,6 +8,7 @@ import java.util.Date;
 
 @Data
 @MappedSuperclass
+//mapped super class means pls treat these fields as columns also in the db 
 public class BaseEntity {
 
     private LocalDateTime createdAt;

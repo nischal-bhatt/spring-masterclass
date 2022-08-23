@@ -56,7 +56,14 @@ public class ContactController {
             log.error("Contact form validation failed due to : " + errors.toString());
             return "contact.html";
         }
-        contactService.saveMessageDetails(contact);
+        boolean isSaved = contactService.saveMessageDetails(contact);
+        if (isSaved)
+        {
+        	System.out.println("successfully inserted");
+        }else
+        {
+        	System.out.println("not inserted!");
+        }
         return "redirect:/contact";
     }
 

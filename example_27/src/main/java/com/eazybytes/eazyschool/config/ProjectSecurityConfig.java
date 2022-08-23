@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
+//configuring spring security to permit all
 public class ProjectSecurityConfig  /*extends WebSecurityConfigurerAdapter*/  {
 
     /*@Override

@@ -18,7 +18,8 @@ public class ProjectSecurityConfig  {
      */
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf().disable()
+        //disable csrf!
+    	http.csrf().disable()
                 .authorizeRequests()
                 //authenticated means is not permit all
                 .mvcMatchers("/home").permitAll()

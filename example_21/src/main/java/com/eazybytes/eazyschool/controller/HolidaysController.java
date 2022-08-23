@@ -25,7 +25,8 @@ public class HolidaysController {
                 new Holiday(" July 4 ","Independence Day", Holiday.Type.FEDERAL),
                 new Holiday(" Sep 5 ","Labor Day", Holiday.Type.FEDERAL),
                 new Holiday(" Nov 11 ","Veterans Day", Holiday.Type.FEDERAL),
-                new Holiday(" May 15 ","Nish bday", Holiday.Type.FEDERAL)
+                new Holiday(" May 18 ","Nish bday", Holiday.Type.FEDERAL),
+                new Holiday(" May 20 ","hehe" , Holiday.Type.FESTIVAL)
         );
         Holiday.Type[] types = Holiday.Type.values();
         for (Holiday.Type type : types) {

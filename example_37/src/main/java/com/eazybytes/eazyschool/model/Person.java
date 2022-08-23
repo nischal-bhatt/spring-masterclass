@@ -13,6 +13,7 @@ import javax.validation.constraints.Size;
 
 @Data
 @Entity
+//FieldsValueMatch need 2 values, thats y
 @FieldsValueMatch.List({
         @FieldsValueMatch(
                 field = "pwd",

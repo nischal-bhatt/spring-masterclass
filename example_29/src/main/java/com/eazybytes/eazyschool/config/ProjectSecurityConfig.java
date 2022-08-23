@@ -40,6 +40,7 @@ public class ProjectSecurityConfig  {
             return http.build();
     }
 
+    //adding more users
     @Bean
     public InMemoryUserDetailsManager userDetailsService() {
 

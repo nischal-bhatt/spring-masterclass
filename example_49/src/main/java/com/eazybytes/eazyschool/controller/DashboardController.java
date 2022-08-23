@@ -28,6 +28,7 @@ public class DashboardController {
 
     @Value("${eazyschool.pageSize}")
     private int defaultPageSize;
+    //taking value from application.properties using @Value
 
     @Value("${eazyschool.contact.successMsg}")
     private String message;

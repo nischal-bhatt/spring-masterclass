@@ -59,6 +59,7 @@ public class DashboardController {
         log.error("defaultPageSize value with @Value annotation is : "+defaultPageSize);
         log.error("successMsg value with @Value annotation is : "+message);
 
+        //using environment variable to get values from application.properties
         log.error("defaultPageSize value with Environment is : "+environment.getProperty("eazyschool.pageSize"));
         log.error("successMsg value with Environment is : "+environment.getProperty("eazyschool.contact.successMsg"));
         log.error("Java Home environment variable using Environment is : "+environment.getProperty("JAVA_HOME"));

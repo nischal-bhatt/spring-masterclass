@@ -4,6 +4,8 @@ import com.eazybytes.eazyschool.constants.EazySchoolConstants;
 import com.eazybytes.eazyschool.model.Contact;
 import com.eazybytes.eazyschool.model.Response;
 import com.eazybytes.eazyschool.repository.ContactRepository;
+
+import ch.qos.logback.core.net.SyslogOutputStream;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
@@ -17,6 +19,7 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @RestController
+//if you use Restcontroller then you dont need to use ResponseBody!
 @RequestMapping(path = "/api/contact",produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
 @CrossOrigin(origins="*")
 public class ContactRestController {
@@ -33,7 +36,8 @@ public class ContactRestController {
     @GetMapping("/getAllMsgsByStatus")
     //@ResponseBody
     public List<Contact> getAllMsgsByStatus(@RequestBody Contact contact){
-        if(null != contact && null != contact.getStatus()){
+        System.out.println(contact);
+    	if(null != contact && null != contact.getStatus()){
             return contactRepository.findByStatus(contact.getStatus());
         }else{
             return List.of();

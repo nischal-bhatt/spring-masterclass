@@ -32,7 +32,7 @@ public class EazySchoolUsernamePwdAuthenticationProvider
         if(null != person && person.getPersonId()>0 &&
             pwd.equals(person.getPwd())){
             return new UsernamePasswordAuthenticationToken(
-                    person.getName(), pwd, getGrantedAuthorities(person.getRoles()));
+                    person.getEmail(), pwd, getGrantedAuthorities(person.getRoles()));
         }else{
             throw new BadCredentialsException("Invalid credentials!");
         }

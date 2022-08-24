@@ -32,7 +32,9 @@ public class EazySchoolUsernamePwdAuthenticationProvider
             throws AuthenticationException {
         String email = authentication.getName();
         String pwd = authentication.getCredentials().toString();
+        System.out.println(pwd + "is here!");
         Person person = personRepository.readByEmail(email);
+        System.out.println("we are here trying to authenticate password");
         if(null != person && person.getPersonId()>0 &&
                 passwordEncoder.matches(pwd,person.getPwd())){
             return new UsernamePasswordAuthenticationToken(

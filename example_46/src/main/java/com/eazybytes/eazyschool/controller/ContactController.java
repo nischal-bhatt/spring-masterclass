@@ -27,6 +27,8 @@ public class ContactController {
     @Autowired
     WebClient webClient;
 
+    //consuming rest services which are housed in another application
+    //RestTemplate
     @GetMapping("/getMessages")
     public List<Contact> getMessages(@RequestParam("status") String status) {
         return contactProxy.getMessagesByStatus(status);

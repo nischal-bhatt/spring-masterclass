@@ -25,6 +25,7 @@ public class EazyClass extends BaseEntity {
     @Size(min=3, message="Name must be at least 3 characters long")
     private String name;
 
+    //one to many relationship - in person class it needs to have a corresponding
     @OneToMany(mappedBy = "eazyClass", fetch = FetchType.LAZY,
             cascade = CascadeType.PERSIST,targetEntity = Person.class)
     private Set<Person> persons;

@@ -35,7 +35,7 @@ public class ProjectConfig {
         return veh;
     }
 
-    @Primary
+    //@Primary
     //in the parantheses, the bean name is there
     @Bean("ferrariVehicle")
     Vehicle vehicle3() {
